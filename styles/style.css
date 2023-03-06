@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins';
+}
+
+html{
+font-size: 0.625rem;
+}
+
+body{
+font-size: 1.6rem;
+}
+
+
+
+/* ----- MAIN ----- */
+
+main {
+    padding: 1.5em;
+}
+
+/* MAIN END */
+
+
+
+/* ----- HEADER ----- */
+
+header {
+    height: auto;
+    max-width: 100%;
+    background-image: linear-gradient(#0000a4, #5858C9);
+    padding: 1.5em;
+}
+
+header .logo {
+    max-width: 50vw;
+    min-height: auto;
+}
+
+header .text {
+    height: auto;
+    margin: 0 auto; 
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin-top: 1.5em;
+}
+
+header h2 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 2.9rem;
+}
+
+header h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 4.4rem;
+}
+
+nav {
+    max-width: 100%;
+    height: auto;
+    z-index: 110;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.0);
+    top: 1.5em;
+}
+
+/* HEADER END */
+
+
+
+/* ----- DASHBOARD ----- */
+
+.dashboard {
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;    
+    margin-bottom: 25px;
+}
+
+.dashboard .title {
+    color: #0000A4;
+    font-size: 3.5rem;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    max-width: 210px;
+    text-align: left;
+    line-height: 1.125;
+}
+
+.begynd {
+    background-color: #BE3400;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.begynd:hover {
+    cursor: pointer;
+    background-color: #a13812;
+}
+
+.heading {
+    display: grid;
+    place-content: center;
+}
+
+.item {
+    background-image: linear-gradient(236deg, #0000A4, #5858C9);
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    min-height: 250px;
+}
+
+.item h1 {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 5px;
+}
+
+.item button {
+    background-color: #BE3400;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    color: white;
+    padding: 0.25em 1em;
+    font-weight: 300;
+}
+
+.item a button {
+    cursor: pointer;
+}
+
+.item a button:hover {
+    background-color: #a13812;
+}
+
+.item p {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    max-width: 220px;
+    font-weight: 300;
+}
+
+/* DASHBOARD END */
+
+
+
+/* ----- FORM ----- */
+
+.faq h1 {
+    color: #0000A4;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    max-width: 250px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+form {
+    display: grid;
+    gap: 1em;
+}
+
+.name, .email, .question, .send {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.name, .email {
+    padding: 1em;
+    font-size: 1.2rem;
+}
+
+.question {
+    font-size: 1.2rem;
+    padding: 1em;
+}
+
+.send {
+    background-color: #0DC300;
+    border: none;
+    color: white;
+    padding: 1em;
+}
+
+.send:hover {
+    background-color: #087700;
+    cursor: pointer;
+}
+
+/* FORM END */
+
+
+
+/* ----- FOOTER ----- */
+
+footer {
+    height: auto;
+    max-width: 100%;
+    background-image: linear-gradient(136deg, #0000a4, #5858C9);
+    padding: 2em 5em;
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+        'logo'
+        'socials'
+        'info';
+}
+
+footer .logo {
+    grid-area: logo;
+    margin-bottom: 2em;
+    max-width: 50vw;
+    min-height: auto;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2em;
+    grid-area: socials;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: black;
+}
+
+footer p {
+    color: white;
+    max-width: 250px;
+    font-size: 2rem;
+
+    grid-area: info;
+}
+
+/* FOOTER END */
+
+
+
+
+@media (min-width: 600px) {
+
+/* ----- MAIN ----- */
+
+    main {
+        padding: 0em;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    /* MAIN END */
+
+
+    
+/* ----- HEADER ----- */
+
+    header {
+        padding: 0 390px;
+    }
+    
+    header .logo {
+        max-width: 10vw;
+        margin-bottom: 2em;
+    }
+    
+    header .text {
+        height: auto;
+        margin: 0 auto; 
+        max-width: 230px;
+    }
+    
+    header h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        font-size: 2.9rem;
+    }
+    
+    header h1 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        font-size: 4.4rem;
+        margin-bottom: 1em;
+    }
+
+    /* HEADER END */
+
+
+
+/* ----- DASHBOARD ----- */
+
+    .dashboard .title {
+        font-size: 5rem;
+        margin-top: 0.5em;
+        max-width: 300px;
+        margin-bottom: 0.5em;
+    }
+    
+    .begynd {
+        font-size: 1.6rem;
+    }
+
+    /* DASHBOARD END */
+
+
+    
+
+/* -----  FORM ----- */
+
+    .faq h1 {
+        font-size: 4rem;
+        max-width: 300px;
+    }
+
+    form {
+        margin-bottom: 1em;
+    }
+
+    .name, .email, .question, .send {
+        font-size: 1.6rem;
+    }
+
+    /* FORM END */
+
+
+
+/* ----- FOOTER ----- */
+
+    footer {
+        height: auto;
+        max-width: 100%;
+        
+        padding: 2em 5em;
+        display: grid;
+        place-content: center;
+        grid-gap: 12em;
+        grid-template-areas: 
+            'logo socials info';
+    }
+    
+    footer .logo {
+        grid-area: logo;
+        margin-bottom: 2em;
+        max-width: 10vw;
+        min-height: auto;
+    }
+    
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 2em;
+    
+        grid-area: socials;
+    }
+    
+    footer p {
+        color: white;
+        max-width: 250px;
+        font-size: 2rem;
+    
+        grid-area: info;
+    }
+
+    /* FOOTER END */
+}

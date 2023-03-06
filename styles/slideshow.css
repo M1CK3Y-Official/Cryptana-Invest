@@ -1,0 +1,77 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+}
+
+.mySlides {
+    display: none;
+    max-width: 1140px;
+    min-height: 336px;
+    object-fit: cover;
+    position: relative;
+    z-index: 30;
+    border: 1px solid black;
+}
+
+.download {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ z-index: 40;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ color: white;
+ margin-top: 1em;
+}
+
+.download h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.download p {
+    font-size: 2rem;
+    max-width: 250px;
+    text-align: left;
+}
+
+.apple, .google {
+    max-width: 12.5rem;
+}
+
+.stores {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+
+.expert {
+    border: 2px solid gray;
+    z-index: 40;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    height: auto;
+}
+
+.expert h1 {
+    font-weight: 400;
+    font-size: 3.4rem;
+}
+
+.expert p {
+    font-size: 1.4rem;
+    max-width: 100%;
+}

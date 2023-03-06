@@ -1,0 +1,68 @@
+.navigation {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: -100vw;
+    transition: left;
+    transition-duration: 0.75s;
+    z-index: 90;
+}
+
+.menus {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    gap: 20px;
+    text-shadow: 2.5px 2.5px 5px black;
+}
+
+.menus a{
+    line-height: 80px;
+    text-decoration: none;
+    color: #eee;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+    cursor: default;
+}
+
+.menus a:hover {
+    /* color: rgb(0, 0, 0); */
+    color: #de5216;
+    text-shadow: 2.5px 2.5px 5px darkred;
+    cursor: pointer;
+}
+
+.navigation.active {
+    left: 0;
+    /* top: 50px; */
+}
+
+.navigationHandle {
+    font-size: 35px;
+    z-index: 100;
+    /* color: #000; */
+    color: #BE3400;
+    transition: text-shadow, color;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+.navigationHandle:hover {
+    /* color: rgb(0, 0, 0); */
+    color: #eee;
+    text-shadow: 2.5px 2.5px 5px black;
+    cursor: pointer;
+}
